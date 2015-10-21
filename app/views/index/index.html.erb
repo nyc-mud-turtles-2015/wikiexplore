@@ -1,0 +1,21 @@
+
+<h1><a href="/">Wikiexplore</a></h1>
+<h2></h2>
+<div id="snippet"></div>
+<div id="container"></div>
+
+<script id="random-list-template" type="text/x-handlebars-template">
+<ul>
+  {{#each articles }}
+  <li><a href="#" class="article-link" data-title="{{title}}" data-id="{{id}}">{{title}}</a></li>
+  {{/each}}
+</ul>
+</script>
+
+<script id="linkto-list-template" type="text/x-handlebars-template">
+<ul>
+  {{#each articles }}
+  <li><a href="{{wikiLink title}}" class="result-link" data-title="{{title}}" data-id="{{id}}">{{title}}</a></li>
+  {{/each}}
+</ul>
+</script>
